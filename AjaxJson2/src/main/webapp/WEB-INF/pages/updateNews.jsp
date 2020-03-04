@@ -125,7 +125,7 @@
                 <div class="form-group">
                     <label for="fNewsType">新闻分类</label>
                     <select class="form-control" id="fNewsType">
-                        <option value="hotNews">行业新闻</option>
+                        <option value="industryNews">行业新闻</option>
                         <option value="companyNews">公司新闻</option>
                     </select>
                 </div>
@@ -203,7 +203,7 @@
                     $("#fNewsType").val("companyNews"); //设置selector选中状态
                 }
                 else {
-                    $("#fNewsType").val("hotNews");
+                    $("#fNewsType").val("industryNews");
                 }
                 ue.setContent(content);
                 layer.msg("成功加载新闻数据！",{time: 1000, icon: 1, shift: 6});
@@ -224,7 +224,7 @@
     $("#submitBtn").click(function () {
         //从表单获取数据
         var title = $("#ftitle").val();
-        var newsType = $("#fNewsType").val();
+        var newsType = $("#fNewsType").find("option:selected").text();
         var keywords = $("#fkeywords").val();
         var content = ue.getContent();
         //获取当前的id
