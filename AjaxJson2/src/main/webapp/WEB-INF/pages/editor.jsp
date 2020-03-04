@@ -126,7 +126,7 @@
                 <div class="form-group">
                     <label for="fNewsType">新闻分类</label>
                     <select class="form-control" id="fNewsType">
-                        <option value="hotNews">行业新闻</option>
+                        <option value="industryNews">行业新闻</option>
                         <option value="companyNews">公司新闻</option>
                     </select>
                 </div>
@@ -138,7 +138,7 @@
                 <div class="form-group">
                     <label for="container">编辑新闻</label>
                 <script id="container" name="content" type="text/plain">
-                    这里输入新闻内容
+                这里输入新闻内容
                 </script>
                 </div>
 
@@ -183,7 +183,7 @@
     $("#submitBtn").click(function () {
         //从表单获取数据
         var title = $("#ftitle").val();
-        var newsType = $("#fNewsType").val();
+        var newsType = $("#fNewsType").find("option:selected").text();
         var keywords = $("#fkeywords").val();
         var content = ue.getContent();
         //json数据
@@ -216,7 +216,6 @@
                 layer.close(loadingIndex);
                 layer.msg(result.message,{time: 1000, icon: 1, shift: 6});
                 window.location.href="/news/toAdminIndex";
-
             },
             error:function () {
                 layer.msg("发生错误",{time: 1000, icon: 2, shift: 6})
