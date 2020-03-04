@@ -19,7 +19,7 @@
 5.登录账号：admin  密码：1234  
 ## 2. 运行效果  
 本项目侧重于后端，所以前端没做，支持新闻的增删改查，预览（相当于前端的回显）
-![](url)
+![主页](https://github.com/xiejibing/NewsManagement/blob/master/AjaxJson2/image/主页.JPG)
 
 
 
