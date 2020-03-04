@@ -7,10 +7,10 @@
 * 项目管理工具：Maven
 * 本地运行需要需改动的配置说明：  
 1.jdbclocal.properties,把里面改成自己的数据库信息  
-     jdbc.driver = com.mysql.cj.jdbc.Driver    
+     ```jdbc.driver = com.mysql.cj.jdbc.Driver    
      jdbc.url = jdbc:mysql://localhost:3306/db_baosi?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=true
      jdbc.username = yourname  
-     ```jdbc.password = yourpassword  ```
+     jdbc.password = yourpassword  ```
 2. dao操作的相关信息也要根据自己的数据库进行相应的修改  
 3.我是把项目部署再tomcat的根目录下的，所以如果不部署到根目录下会出现资源加载失败的问题  
 4.创建数据库的sql语句在文件家的sql中  
