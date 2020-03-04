@@ -7,6 +7,7 @@
 * 项目管理工具：Maven
 * 本地运行需要需改动的配置说明：  
 1.jdbclocal.properties,把里面改成自己的数据库信息  
+
      ```jdbc.driver = com.mysql.cj.jdbc.Driver    
      jdbc.url = jdbc:mysql://localhost:3306/db_baosi?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=true
      jdbc.username = yourname  
