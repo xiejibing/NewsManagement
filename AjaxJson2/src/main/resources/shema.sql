@@ -1,4 +1,4 @@
-drop databases if exisits db_baosi;
+drop database if exisits db_baosi;
 use db_baosi;
 drop table if exists t_administrator;
 create table t_administrator
@@ -13,7 +13,7 @@ create table t_administrator
 插入数据
  */
 insert into t_administrator(admin_name,admin_password)values
-('admin','123');
+('admin','1234');
 
 -- 创建新闻表
 drop table if exists t_news;
